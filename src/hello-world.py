@@ -4,17 +4,18 @@ print("RODRIGO EDUARDO CARCUZ ORTEGA 201700633")
 print("lista enlazada simple ")
  #lista enlazada en python#
 class Nodo:
-	def_init_(self,dato):
-	serf.siguiente=None
-	self.info=dato
+	
+	def init(self,dato):
+	    self.siguiente=None
+	    self.info=dato
 
 	def verNodo(self):
 		return self.info
 
 
 class Lista:
-	def_init_(self):
-	self.primero=None
+	def init(self):
+	    self.primero=None
 
 	def vacia(self):
 		if self.primero==None:
@@ -36,16 +37,18 @@ class Lista:
 			temporal=temporal.siguiente
 
 	def borrarPrimero(self):
-		if self.vacia()	==False()	
-		self.primero=self.primero.siguiente
+		 if self.vacia()	==False:	
+		    self.primero=self.primero.siguiente
 
 	def borrarUltimo(self):
 		anterior=self.primero
 		actual=self.primero
 		while actual.siguiente!=None:
-			anterior=actual
-			actual=actual.siguiente
-			anterior.siguiente=None
+			 anterior=actual
+			 actual=actual.siguiente
+	         anterior.siguiente=None
+
+
 
 	def borrarPosicion(self,pos):
         anterior=self.primero

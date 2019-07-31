@@ -1,5 +1,6 @@
 import os
-print("RODRIGO EDUARDO CARCUZ ORTEGA")
+print("RODRIGO EDUARDO CARCUZ ORTEGA 201700633")
+
 print("lista enlazada simple ")
  #lista enlazada en python#
 class Nodo:
@@ -98,6 +99,6 @@ listas = Lista()
 		else: 
 			print("")
 			input("pulsa una opcion valida")
-			
+
 
 				

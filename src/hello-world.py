@@ -79,33 +79,31 @@ def menu():
 while True:
 	menu()
 	opcionmenu= input("insertar la opcion del menu")
-	if opcionmenu=="1":
+	if opcionmenu == "1":
 		print("") 
 		in1= input("ingrese lo que contendra el nodo")
 		listas.InsertarPrimero(in1) 
 		input("pulsa tecla para continuar")
-    elif opcionmenu=="2":
-
+	elif opcionmenu == "2":
 		print("")
 		listas.borrarPrimero()
 		input("pulsa tecla para continuar")
-
-    elif opcionmenu=="3":
+	elif opcionmenu == "3":
 		listas.borrarUltimo()
 		print("")
 		input ("pulsa tecla para continuar")
-	elif opcionmenu=="4":
+	elif opcionmenu == "4":
 		print("")
 		pos=input("ingrese la posicion a borrar")
 		listas.borrarPosicion(pos)
-	elif opcionmenu=="5":
+	elif opcionmenu == "5":
 		print("")
 		listas.listar()
-	elif opcionmenu=="6":
+	elif opcionmenu == "6":
 		break
 	else: 
 		print("")
 		input("pulsa una opcion valida")
 
-
+print("")
 				

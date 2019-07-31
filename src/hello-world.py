@@ -44,64 +44,68 @@ class Lista:
 		anterior=self.primero
 		actual=self.primero
 		while actual.siguiente!=None:
-			 anterior=actual
-			 actual=actual.siguiente
-	         anterior.siguiente=None
+			anterior=actual
+			actual=actual.siguiente
+			anterior.siguiente=None
+			
 
 
 
 	def borrarPosicion(self,pos):
-        anterior=self.primero
-		actual=self.primero
+		anterior=self,primero
+		actual= self.primero
 		k=0
+        
 		if pos>0:
 			while k!= pos and actual.siguiente != None:
-				anterior =actual
+			
+				anterior= actual
 				actual=self.primero
-				k+=1
-		    if k==pos:
+				k+1
+						
+		if k==pos:
 				anterior.siguiente=actual.siguiente
 
-
-    def menu():
-        os.system('cls')
-		print("\t1 - ingresar al nodo")
-		print("\t2 - borrar primero")
-		print("\t3 -borrar ultimo")
-		print("\t4 - borrar posicion")
-		print("\t5 - imprimir lista")
-		print("\t6 - salir")
 listas = Lista()
-    while True:
-		menu()
-		opcionmenu= input("Insertar un numero")
-		if opcionmenu=="1":
-			print("") 
-			in1= input("ingrese lo que contendra el nodo")
-			listas.InsertarPrimero(in1) 
-			input("pulsa tecla para continuar")
+def menu():
+  os.system('cls')
+  print("\t1 - ingresar al nodo")
+  print("\t2 - borrar primero")
+  print("\t3 -borrar ultimo")
+  print("\t4 - borrar posicion")
+  print("\t5 - imprimir lista")
+  print("\t6 - salir")
+	  
+while True:
+	menu()
+	opcionmenu= input("insertar la opcion del menu")
+	if opcionmenu=="1":
+		print("") 
+		in1= input("ingrese lo que contendra el nodo")
+		listas.InsertarPrimero(in1) 
+		input("pulsa tecla para continuar")
+    elif opcionmenu=="2":
 
-        elif opcionmenu=="2":
-			print("")
-			listas.borrarPrimero()
-            input("pulsa tecla para continuar")
+		print("")
+		listas.borrarPrimero()
+		input("pulsa tecla para continuar")
 
-		elif opcionmenu=="3":
-			listas.borrarUltimo()
-			print("")
-			input ("pulsa tecla para continuar")
-		elif opcionmenu=="4":
-			print("")
-			pos=input("ingrese la posicion a borrar")
-			listas.borrarPosicion(pos)
-		elif opcionmenu=="5":
-		    print("")
-			listas.listar()
-		elif opcionmenu=="6":
-			break
-		else: 
-			print("")
-			input("pulsa una opcion valida")
+    elif opcionmenu=="3":
+		listas.borrarUltimo()
+		print("")
+		input ("pulsa tecla para continuar")
+	elif opcionmenu=="4":
+		print("")
+		pos=input("ingrese la posicion a borrar")
+		listas.borrarPosicion(pos)
+	elif opcionmenu=="5":
+		print("")
+		listas.listar()
+	elif opcionmenu=="6":
+		break
+	else: 
+		print("")
+		input("pulsa una opcion valida")
 
 
 				
